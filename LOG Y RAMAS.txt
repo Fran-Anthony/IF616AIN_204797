@@ -1,0 +1,55 @@
+git checkout -b ramita1  # Creamos y cambiamos a ramita1
+git checkout main        # Vuelve a la rama principal
+git checkout -b ramita2  # Creamos y cambiamos a ramita2
+
+RAMA NUMERO 1
+alumno-daii@alumno-daii-HP-Z4-G4-Workstation:~/desarrollo2$ git checkout ramita1
+Cambiado a rama 'ramita1'
+alumno-daii@alumno-daii-HP-Z4-G4-Workstation:~/desarrollo2$ git log
+commit bb1eec6c6a08e159f912269eb99916be027a9142 (HEAD -> ramita1)
+Author: Fran <204797@unsaac.edu.pe>
+Date:   Tue Sep 3 16:55:01 2024 -0500
+
+    Mi primera chamba crando una segunda frase en archivo1 en ramita1
+
+commit cb7a4d6e6c37f59d92def30fff4668a38ed6e293
+Author: Fran <204797@unsaac.edu.pe>
+Date:   Tue Sep 3 16:54:16 2024 -0500
+
+    Mi primera chamba creando una frase inicial en ramita1
+
+commit 1fda2275ba884a2fa6b884bfeacba41f9519f8a8 (master)
+Author: Fran <204797@unsaac.edu.pe>
+Date:   Tue Sep 3 16:34:06 2024 -0500
+
+     MI PRIMERA CHAMBA
+     
+RAMA NUMERO 2     
+     
+alumno-daii@alumno-daii-HP-Z4-G4-Workstation:~/desarrollo2$ git checkout ramita2
+Cambiado a rama 'ramita2'
+alumno-daii@alumno-daii-HP-Z4-G4-Workstation:~/desarrollo2$ git log
+commit c8736eb0c06191299f49dde6cb3c76d4112b818a (HEAD -> ramita2)
+Author: Fran <204797@unsaac.edu.pe>
+Date:   Tue Sep 3 16:57:26 2024 -0500
+
+    moriremos en el intentto de crear una nueva frase en archivo2 de ramita2
+
+commit cbb3eb75ba5df30e95f7ad9ad513112b38119198
+Author: Fran <204797@unsaac.edu.pe>
+Date:   Tue Sep 3 16:56:20 2024 -0500
+
+    ahora intentamos crear  una frase inicial en ramita2
+
+commit cbeee32d18b658e343ddf8538783bcf453e0b591 (origin/main, main)
+Author: Fran-Anthony <federicohcs@gmail.com>
+Date:   Thu Aug 29 17:45:54 2024 -0500
+
+    Add files via upload
+
+commit 14b268b6a6ed8650ab298c5d5eca07c16974396c
+Author: Fran-Anthony <federicohcs@gmail.com>
+Date:   Thu Aug 29 17:41:28 2024 -0500
+
+    Initial commit
+
