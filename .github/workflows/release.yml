@@ -1,3 +1,9 @@
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+permissions:
+  contents: write
+
 name: Release
 
 on:
@@ -9,6 +15,9 @@ jobs:
   release:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write  # Asegúrate de que el token tenga permisos para escribir
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -16,13 +25,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20.8.1'  # Cambia a la versión requerida por Semantic Release
+          node-version: '20.8.1'
 
       - name: Install dependencies
         run: npm install
 
       - name: Run Semantic Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Asegúrate que este token esté presente
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
 
